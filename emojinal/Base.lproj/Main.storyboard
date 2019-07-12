@@ -32,38 +32,40 @@
                                 <rect key="frame" x="28" y="287" width="170" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99808424709999999" green="0.71434945729999999" blue="0.71902174890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" backgroundImage="dog emoji"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="155"/>
+                                <state key="normal" title="🐶"/>
                                 <connections>
-                                    <action selector="dogBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zrW-So-HO8"/>
-                                    <action selector="unicornBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VUo-6n-Qgc"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gMx-ZO-bt9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vp0-bT-TMP">
                                 <rect key="frame" x="217" y="287" width="170" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99808424709999999" green="0.71434945729999999" blue="0.71902174890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" backgroundImage="catEmoji"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="155"/>
+                                <state key="normal" title="🐱"/>
                                 <connections>
-                                    <action selector="catBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNE-Qb-MJi"/>
-                                    <action selector="unicornBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMF-rh-fbk"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24n-GN-v26"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHU-9L-Tju">
                                 <rect key="frame" x="28" y="548" width="170" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99808424709999999" green="0.71434945729999999" blue="0.71902174890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" backgroundImage="monkeyEmoji"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="155"/>
+                                <state key="normal" title="🙈"/>
                                 <connections>
-                                    <action selector="monkeyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="geB-NG-qxO"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xcb-KE-Qv5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXF-ja-baj">
                                 <rect key="frame" x="217" y="548" width="170" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99808424709999999" green="0.71434945729999999" blue="0.71902174890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" backgroundImage="unicornEmoji"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="155"/>
+                                <state key="normal" title="🦄"/>
                                 <connections>
-                                    <action selector="unicornBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fRI-9L-zUl"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYd-8j-oO9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,10 +82,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="catEmoji" width="160" height="160"/>
-        <image name="dog emoji" width="480" height="480"/>
-        <image name="monkeyEmoji" width="600" height="600"/>
-        <image name="unicornEmoji" width="120" height="120"/>
-    </resources>
 </document>

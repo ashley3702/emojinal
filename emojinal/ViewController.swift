@@ -9,8 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var customMessages = [
+        "Woof": ["Woof", "Bark", "Take me on a walk!"],
+        "Meow": ["Meow", "Hiss", "🐟"],
+        "🍌": ["🍌", "Ooh Ah Ah", "🌴"],
+        "Neigh ✨!" : ["Neigh ✨!", "🐴💖", "You are magical!"]
+    ]
+    
     let emojis = [
-        
+       
         "🐶" : "Woof",
         "🐱" : "Meow",
         "🙈" :"🍌",
@@ -19,8 +27,11 @@ class ViewController: UIViewController {
     ]
     @IBAction func showMessage( sender: UIButton) {
         let selectedEmoji = sender.titleLabel?.text
+        let randomNumber = Int.random(in:0...2)
+        let emojiMessage = customMessages[emojis[selectedEmoji!]!]?[randomNumber]
        
-        let alertController = UIAlertController(title: "Ok", message: emojis[selectedEmoji!]!, preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "Thanks!", message: emojiMessage, preferredStyle: UIAlertController.Style.alert)
+        
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alertController, animated: true, completion: nil)
         
