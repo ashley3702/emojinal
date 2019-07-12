@@ -9,32 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    @IBAction func dogBtn(_ sender: Any) {
-        let alertController = UIAlertController(title: "You Chose Dog!", message: "Woof!", preferredStyle: UIAlertController.Style.alert)
+    let emojis = [
+        
+        "🐶" : "Woof",
+        "🐱" : "Meow",
+        "🙈" :"🍌",
+        "🦄": "Neigh ✨!"
+        
+    ]
+    @IBAction func showMessage( sender: UIButton) {
+        let selectedEmoji = sender.titleLabel?.text
+       
+        let alertController = UIAlertController(title: "Ok", message: emojis[selectedEmoji!]!, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alertController, animated: true, completion: nil)
         
-    }
-    
-    @IBAction func catBtn(_ sender: Any) {
-        let alertController = UIAlertController(title: "You Chose Cat!", message: "Meow!!", preferredStyle: UIAlertController.Style.alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        present(alertController, animated: true, completion: nil)
-
-    }
-    
-    @IBAction func monkeyBtn(_ sender: Any) {
-        let alertController = UIAlertController(title: "You Chose Monkey!", message: "Ooh Ooh Ah Ah!", preferredStyle: UIAlertController.Style.alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        present(alertController, animated: true, completion: nil)
-    }
-    
-    @IBAction func unicornBtn(_ sender: Any) {
-        let alertController = UIAlertController(title: "You Chose Unicorn!", message: "Neigh ✨!", preferredStyle: UIAlertController.Style.alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        present(alertController, animated: true, completion: nil)
-
     }
     
     override func viewDidLoad() {
@@ -44,4 +33,5 @@ class ViewController: UIViewController {
 
 
 }
+
 

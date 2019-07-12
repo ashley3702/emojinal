@@ -35,6 +35,7 @@
                                 <state key="normal" backgroundImage="dog emoji"/>
                                 <connections>
                                     <action selector="dogBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zrW-So-HO8"/>
+                                    <action selector="unicornBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VUo-6n-Qgc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vp0-bT-TMP">
@@ -44,6 +45,7 @@
                                 <state key="normal" backgroundImage="catEmoji"/>
                                 <connections>
                                     <action selector="catBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNE-Qb-MJi"/>
+                                    <action selector="unicornBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMF-rh-fbk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHU-9L-Tju">
