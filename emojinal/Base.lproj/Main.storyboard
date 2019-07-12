@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CHOOSE ONE!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYO-z8-bsQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE ONE!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYO-z8-bsQ">
                                 <rect key="frame" x="47" y="94" width="320" height="92.5"/>
                                 <color key="backgroundColor" red="0.99808424709999999" green="0.71434945730249821" blue="0.71902174890836623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -28,28 +28,48 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monkeyEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="I9W-yp-y9H">
-                                <rect key="frame" x="28" y="548" width="170" height="170"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99808424709999999" green="0.71434945729999999" blue="0.71902174890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="catEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="PdD-JK-8Q4">
-                                <rect key="frame" x="217" y="287" width="170" height="170"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99808424709999999" green="0.71434945729999999" blue="0.71902174890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unicornEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="eRY-2y-dCQ">
-                                <rect key="frame" x="217" y="548" width="170" height="170"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99808424709999999" green="0.71434945729999999" blue="0.71902174890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog emoji" translatesAutoresizingMaskIntoConstraints="NO" id="vjM-JM-QmR">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDt-9N-FOm">
                                 <rect key="frame" x="28" y="287" width="170" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99808424709999999" green="0.71434945729999999" blue="0.71902174890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
+                                <state key="normal" backgroundImage="dog emoji"/>
+                                <connections>
+                                    <action selector="dogBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zrW-So-HO8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vp0-bT-TMP">
+                                <rect key="frame" x="217" y="287" width="170" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99808424709999999" green="0.71434945729999999" blue="0.71902174890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="catEmoji"/>
+                                <connections>
+                                    <action selector="catBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNE-Qb-MJi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHU-9L-Tju">
+                                <rect key="frame" x="28" y="548" width="170" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99808424709999999" green="0.71434945729999999" blue="0.71902174890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="monkeyEmoji"/>
+                                <connections>
+                                    <action selector="monkeyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="geB-NG-qxO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXF-ja-baj">
+                                <rect key="frame" x="217" y="548" width="170" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99808424709999999" green="0.71434945729999999" blue="0.71902174890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="unicornEmoji"/>
+                                <connections>
+                                    <action selector="unicornBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fRI-9L-zUl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.79646338740205114" green="0.7120789780744925" blue="0.93341529187817263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="TYO-z8-bsQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4xy-tm-MCV"/>
+                            <constraint firstItem="TYO-z8-bsQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="8hh-r8-p7f"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
